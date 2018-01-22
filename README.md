@@ -12,4 +12,4 @@ The tests are located under the `casperjs` folder.
 ### Scripts
 The utility scripts are located under the `scripts` folder.
 
-1. **wait**: Copied from https://github.com/waisbrot/docker-wait. Awaits for a given service to become available.
+1. **waiter**: Copied from https://github.com/waisbrot/docker-wait. Awaits for a given service to become available.

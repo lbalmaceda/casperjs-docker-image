@@ -39,9 +39,9 @@ RUN COMPOSE_URL="https://circle-downloads.s3.amazonaws.com/circleci-images/cache
   && chmod +x /usr/bin/docker-compose \
   && docker-compose version
 
-# wait
-COPY scripts/wait /usr/local/bin/wait
-RUN chmod +x /usr/local/bin/wait
+# waiter
+COPY scripts/waiter /usr/local/bin/waiter
+RUN chmod +x /usr/local/bin/waiter
 
 # credentials replacer
 # TO-DO

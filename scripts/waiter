@@ -2,7 +2,7 @@
 
 # Original file from https://github.com/waisbrot/docker-wait
 # Changed: Pass the variables as arguments rather than env variables
-# sh: wait localhost:3000 50
+# sh: waiter localhost:3000 50
 set -e
 
 targets=$1
