@@ -40,14 +40,14 @@ RUN COMPOSE_URL="https://circle-downloads.s3.amazonaws.com/circleci-images/cache
   && docker-compose version
 
 # waiter
-COPY scripts/waiter /usr/local/bin/waiter
+COPY ./scripts/waiter /usr/local/bin/waiter
 RUN chmod +x /usr/local/bin/waiter
 
 # credentials replacer
 # TO-DO
 
 # casperjs web-app tests
-COPY casperjs/webapp-tests.js webapp-tests.js
+COPY ./casperjs/webapp-tests.js webapp-tests.js
 
 # reset from parent image
 ENTRYPOINT []
